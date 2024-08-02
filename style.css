@@ -19,9 +19,11 @@ header {
 }
 
 .header-image {
-    width: 50px; /* Ajuste la taille de l'image selon tes besoins */
-    height: 50px;
-    margin-right: 20px;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
 }
 
 .header-title-nav {
