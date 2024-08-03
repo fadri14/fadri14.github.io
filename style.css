@@ -18,16 +18,6 @@ header {
     justify-content: center;
 }
 
-.header-image {
-    width: 100px;
-    height: 100px;
-    margin-left: 10px;
-    border: none;
-    background-color: transparent;
-    align-items: left;
-    justify-content: left;
-}
-
 .header-title-nav {
     text-align: center;
 }
