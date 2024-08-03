@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <img src="tux.jpg" alt="Tux" class="header-image">
-            <div class="header-title-nav">
-                <h1>Mes Projets</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="projects.html">Projets</a></li>
-                        <li><a href="experience.html">Expérience</a></li>
-                        <li><a href="pdf.html">Mon CV</a></li>
-                    </ul>
-                </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mes Projets</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="tux.jpg" alt="Tux" class="header-image">
+                <div class="header-title-nav">
+                    <h1>Mes Projets</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="projects.html">Projets</a></li>
+                            <li><a href="experience.html">Expérience</a></li>
+                            <li><a href="pdf.html">Mon CV</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
-    <section>
-        <h2><u>Projets</u></h2>
-        <article>
-            <h3>Script d'installation d'Arch linux</h3>
-            <p>Le but de base était d'apprendre à installer un système arch linux complet sans utiliser l'outil archinstall. Lors de l'apprentissage, j'ai édité un fichier pour marquer les étapes et les commandes. Au final, j'ai décidé de le ccompléter pour en faire un script avec post-installation. Il installe donc également toutes les applications mais également toutes ma config via github. Voici les spécifications de l'installation.</p>
-            <p>Système de fichier : btrfs</p>
-            <p>Chiffrement avec luks</p>
-            <p>DE/WM : swayfx</p>
-            <p>Système d'amorçage : systemd-boot</p>
-        </article>
-        <article>
-            <h3>Capteur de température avec arduino</h3>
-            <p>J'ai utilisé un arduino accompagné d'un capteur de température et d'humidité, un écran lcd et un lecteur de carte SD. Le but était d'analyser les niveaux de température et d'humidité et des les enregistrer dans la carte SD afin de faire des statistiques et de voir si l'envirronement est correct.</p>
-        </article>
-    </section>
-</body>
+        </header>
+        <section>
+            <h2><u>Projets</u></h2>
+            <article>
+                <h3>Script d'installation d'Arch Linux</h3>
+                <p>Le but initial était d'apprendre à installer un système Arch Linux complet sans utiliser l'outil archinstall. Lors de l'apprentissage, j'ai édité un fichier pour marquer les étapes et les commandes. Au final, j'ai décidé de le compléter pour en faire un script avec post-installation. Il installe donc également toutes les applications ainsi que ma configuration via GitHub. Voici les spécifications de l'installation :</p>
+                <p><b>Système de fichiers :</b> btrfs</p>
+                <p><b>Chiffrement :</b> LUKS</p>
+                <p><b>DE/WM :</b> Swayfx</p>
+                <p><b>Système d'amorçage :</b> systemd-boot</p>
+            </article>
+            <article>
+                <h3>Script de backup</h3>
+                <p>Je suis très adepte des scripts Bash. Celui que j'utilise le plus souvent est un petit script pour sauvegarder toutes les données que j'ai choisies sur un disque dur externe. Je branche le disque dur et lance le script. Ensuite, il s'occupe de monter le disque et de faire une sauvegarde ou une restauration en fonction du paramètre. Enfin, il démonte le disque et envoie une notification indiquant que le programme s'est bien déroulé. La commande rsync est utilisée pour synchroniser les données. Cela me permet de sauvegarder rapidement et régulièrement toutes mes données.</p>
+            </article>
+            <article>
+                <h3>Capteur de température avec Arduino</h3>
+                <p>J'ai utilisé un Arduino accompagné d'un capteur de température et d'humidité, un écran LCD et un lecteur de carte SD. Le but était d'analyser les niveaux de température et d'humidité et de les enregistrer sur la carte SD afin de faire des statistiques et de vérifier si l'environnement est correct.</p>
+            </article>
+            <article>
+                <h3>Créer mon propre serveur</h3>
+                <p>Créer mon propre serveur est un nouveau projet qui m'est venu à l'esprit. L'idée finale est de déployer un serveur dans ma future maison qui offrira plusieurs applications utiles. Je pense notamment à Wireguard, Adguard, Vaultwarden, Syncthing, Nextcloud, et bien d'autres. C'est un gros projet, mais également très intéressant. Cependant, vu l'importance des applications, il faut prendre le temps de faire énormément de tests et de progresser petit à petit. Le tout tournera à l'aide du logiciel Yunohost, qui facilite l'auto-hébergement.</p>
+            </article>
+        </section>
+    </body>
 </html>
 
